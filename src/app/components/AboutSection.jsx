@@ -89,33 +89,33 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  {
-    title: "Organizations",
-    id: "organizations",
-    content: (
-      <ul className="pl-2 list-disc">
-        <li>
-          <Link
-            className="text-blue-400 hover:underline"
-            target="_blank"
-            href=""
-          >
-            FYPL Binus University B2027
-          </Link>
-        </li>
-        <li>
-          <Link
-            className="text-blue-400 hover:underline"
-            target="_blank"
-            href="https://student-activity.binus.ac.id/himti/organizational-structure/"
-          >
-            President of HIMTI BINUS
-          </Link>
-        </li>
+  // {
+  //   title: "Organizations",
+  //   id: "organizations",
+  //   content: (
+  //     <ul className="pl-2 list-disc">
+  //       <li>
+  //         <Link
+  //           className="text-blue-400 hover:underline"
+  //           target="_blank"
+  //           href=""
+  //         >
+  //           FYPL Binus University B2027
+  //         </Link>
+  //       </li>
+  //       <li>
+  //         <Link
+  //           className="text-blue-400 hover:underline"
+  //           target="_blank"
+  //           href="https://student-activity.binus.ac.id/himti/organizational-structure/"
+  //         >
+  //           President of HIMTI BINUS
+  //         </Link>
+  //       </li>
       
-      </ul>
-    ),
-  },
+  //     </ul>
+  //   ),
+  // },
 ];
 
 const AboutSection = () => {
@@ -141,7 +141,7 @@ const AboutSection = () => {
         </a>
         
         <div className="flex flex-col h-full mt-4 text-left md:mt-0">
-          <h2 className="mb-4 text-4xl font-bold text-green-400">About Me</h2>
+          <h2 className="mb-4 text-4xl font-bold text-blue-600">About Me</h2>
           <p className="text-base lg:text-lg">
           As a Computer Science student at Binus University, I possess strong hard and soft skills
           along with valuable organizational experience. My hard skills include proficiency in
@@ -172,13 +172,13 @@ const AboutSection = () => {
               {" "}
               Certifications{" "}
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("organizations")}
               active={tab === "organizations"}
             >
               {" "}
               Organizations{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}

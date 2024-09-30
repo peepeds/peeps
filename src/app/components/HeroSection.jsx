@@ -18,7 +18,7 @@ const HeroSection = () => {
           transition={{ duration: 0.3 }}
           className="col-span-8 text-center place-self-center sm:text-left justify-self-start"
         >
-          <h1 className="mb-4 text-3xl font-extrabold text-white sm:text-4xl lg:text-7xl lg:leading-normal">
+          <h1 className="mb-4 text-4xl font-extrabold text-white sm:text-4xl lg:text-7xl lg:leading-normal">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               <TypeAnimation
                 sequence={[
@@ -44,7 +44,7 @@ const HeroSection = () => {
             </span>
             <br></br>
           </h1>
-          <h2 className="mb-4 text-2xl font-extrabold text-gray-300 sm:text-3xl lg:text-6xl lg:leading-normal">
+          <h2 className="mb-4 text-5xl font-extrabold text-gray-300 sm:text-3xl lg:text-6xl lg:leading-normal">
             Edbert Purwanto
           </h2>
           <div className="flex gap-2 mb-2 font-light text-gray-300 underline-offset-2">
@@ -83,7 +83,8 @@ const HeroSection = () => {
               className="inline-block w-full px-1 py-1 mt-3 text-white rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Resume
+                {/* <p className="text-2xl">Resume</p> */}
+                <span className="text-lg">Resume</span>
               </span>
             </Link>
           </div>

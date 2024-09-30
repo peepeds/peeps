@@ -20,8 +20,8 @@ module.exports = {
     },
     colors: {
       ...colors,
-      primary: colors.green,
-      secondary: colors.green,
+      primary: colors.blue,
+      secondary: colors.blue,
       sky: colors.sky,
       stone: colors.stone,
       neutral: colors.neutral,
