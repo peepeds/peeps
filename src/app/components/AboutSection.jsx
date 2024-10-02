@@ -5,43 +5,57 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Tech Stack",
-    id: "Tech Stack",
+    title: "Skills",
+    id: "Skills",
     content: (
       <ul className="pl-2 list-disc">
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>JAVA</li>
+        <li>Back-End</li>
+        <li>AI/ML</li>
+        <li>IoT</li>
         <li>C/C++</li>
-        <li>Vercel</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-        <li>Arduino IDE</li>
-        <li>Android Studio</li>
-        <li>Shell</li>
+        <li>SQL & Non-SQL</li>
+        <li>Mobile</li>
       </ul>
     ),
   },
   {
-    title: "Education",
-    id: "education",
+    title: "Portfolio",
+    id: "portfolio",
     content: (
       <ul className="pl-2 list-disc">
         <li>
           <Link
             className="text-blue-400 hover:underline"
             target="_blank"
-            href="https://binus.ac.id/"
+            href="https://sorting.algo.peepeds.fun/"
           >
-            Bina Nusantara University
+            Sorting Visualization
           </Link>
           <br />
-          2022-2026 (Expected)
+          
         </li>
-        <p>Computer Science, 3.64/4.00</p>
-        <br />
+        <li>
+          <Link
+            className="text-blue-400 hover:underline"
+            target="_blank"
+            href="https://sorting.peepeds.fun/"
+          >
+            Sorting Visualization (soon)
+          </Link>
+          <br />
+          
+        </li>
+        <li>
+          <Link
+            className="text-blue-400 hover:underline"
+            target="_blank"
+            href="https://kanban.peepeds.fun/"
+          >
+            Kanban Board (refactor)
+          </Link>
+          <br />
+        </li>
+        
       </ul>
     ),
   },
@@ -89,37 +103,10 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  // {
-  //   title: "Organizations",
-  //   id: "organizations",
-  //   content: (
-  //     <ul className="pl-2 list-disc">
-  //       <li>
-  //         <Link
-  //           className="text-blue-400 hover:underline"
-  //           target="_blank"
-  //           href=""
-  //         >
-  //           FYPL Binus University B2027
-  //         </Link>
-  //       </li>
-  //       <li>
-  //         <Link
-  //           className="text-blue-400 hover:underline"
-  //           target="_blank"
-  //           href="https://student-activity.binus.ac.id/himti/organizational-structure/"
-  //         >
-  //           President of HIMTI BINUS
-  //         </Link>
-  //       </li>
-      
-  //     </ul>
-  //   ),
-  // },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("Tech Stack");
+  const [tab, setTab] = useState("Skills");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -141,6 +128,7 @@ const AboutSection = () => {
         </a>
         
         <div className="flex flex-col h-full mt-4 text-left md:mt-0">
+          <br />
           <h2 className="mb-4 text-4xl font-bold text-blue-600">About Me</h2>
           <p className="text-base lg:text-lg">
           As a Computer Science student at Binus University, I possess strong hard and soft skills
@@ -152,18 +140,18 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("Tech Stack")}
-              active={tab === "Tech Stack"}
+              selectTab={() => handleTabChange("Skills")}
+              active={tab === "Skills"}
             >
               {" "}
-              Tech Stack{" "}
+              Skills{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("education")}
-              active={tab === "education"}
+              selectTab={() => handleTabChange("portfolio")}
+              active={tab === "portfolio"}
             >
               {" "}
-              Education{" "}
+              Portfolio{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}

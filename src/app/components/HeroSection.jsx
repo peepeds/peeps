@@ -10,8 +10,8 @@ import { Globe } from "./Globe";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+    <section className="lg:py-16" >
+      <div className="grid grid-cols-1 sm:grid-cols-12 ">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -46,7 +46,7 @@ const HeroSection = () => {
           </h1>
           <h2 className="mb-4 text-5xl font-extrabold text-gray-300 sm:text-3xl lg:text-6xl lg:leading-normal">
             Edbert Purwanto
-          </h2>
+          </h2> 
           <div className="flex gap-2 mb-2 font-light text-gray-300 underline-offset-2">
             <Link
               target="_blank"
@@ -83,7 +83,6 @@ const HeroSection = () => {
               className="inline-block w-full px-1 py-1 mt-3 text-white rounded-full sm:w-fit bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                {/* <p className="text-2xl">Resume</p> */}
                 <span className="text-lg">Resume</span>
               </span>
             </Link>
