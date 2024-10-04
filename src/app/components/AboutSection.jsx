@@ -38,9 +38,9 @@ const TAB_DATA = [
           <Link
             className="text-blue-400 hover:underline"
             target="_blank"
-            href="https://sorting.peepeds.fun/"
+            href="https://short.peepeds.fun/"
           >
-            Sorting Visualization (soon)
+            URL Shortener
           </Link>
           <br />
           
